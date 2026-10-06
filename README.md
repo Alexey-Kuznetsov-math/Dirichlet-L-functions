@@ -75,7 +75,7 @@ They represent the complex coefficient
 $$
 \lambda_{\chi_{3,2},20,1}^{(0)}
 =2.6331058366723794812
--i\,2.4826329891642160635.
+-i 2.4826329891642160635.
 $$
 
 Similarly, the first two numbers in `omega_chi_{3,2}_p=20_r=0.txt` are
@@ -90,7 +90,7 @@ They represent
 $$
 \omega_{\chi_{3,2},20,1}^{(0)}
 =-1.8668713937563482763\times10^{-8}
--i\,1.7367471766222593860\times10^{-8}.
+-i 1.7367471766222593860\times10^{-8}.
 $$
 
 Here $i$ denotes the imaginary unit.
