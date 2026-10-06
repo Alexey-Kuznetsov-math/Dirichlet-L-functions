@@ -182,7 +182,7 @@ The option `-ffree-line-length-none` accommodates source lines longer than 132 c
 
 ## Method and accuracy
 
-The modules combine direct summation, Euler–Maclaurin summation, and the quadrature approximation $L_{40}(s,\chi)$. They select the method according to estimated computational cost, with the switch between the Euler–Maclaurin and quadrature regions at $|\operatorname{Im}(s)|=400$. The functional equation and complex conjugation extend the computation to the other regions of the complex plane; see Section 3 of the paper.
+The modules combine direct summation, Euler–Maclaurin summation, and the quadrature approximation $L_{40}(s,\chi)$. They select the method according to estimated computational cost, with the switch between the Euler–Maclaurin and quadrature regions at $|Im(s)|=400$. The functional equation and complex conjugation extend the computation to the other regions of the complex plane; see Section 3 of the paper.
 
 For fixed $\chi$ and $p$, evaluating the quadrature approximation in a fixed vertical strip requires $O(t^{1/2})$ numerical operations as $t\to+\infty$, excluding coefficient precomputation.
 
