@@ -60,15 +60,6 @@ chi_3_2/p=20/omega_chi_{3,2}_p=20_r=0.txt
 
 The lambda file contains the nodes $\lambda_{\chi,p,j}^{(r)}$, and the omega file contains the weights $\omega_{\chi,p,j}^{(r)}$, in increasing index order $j=1,\ldots,p$. **Each file contains $p$ complex coefficients, stored as $2p$ real numbers.** In each consecutive pair, the first number is the real part and the second is the imaginary part. Nodes and weights with the same index $j$ belong together.
 
-In the approximation for $s=\sigma+it$ with $t>0$, the residue class is selected using
-
-$$
-N=\left\lfloor\sqrt{\frac{qt}{2\pi}}\right\rfloor,
-\qquad r=N\bmod q.
-\tag{1}
-$$
-
-See equations (3)–(5) of the paper for the complete approximation. The archives contain the full tables for every residue class, including the coefficients related by the symmetries in equations (6)–(7) of the paper.
 
 ### Example
 
