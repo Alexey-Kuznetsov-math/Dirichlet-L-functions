@@ -186,35 +186,6 @@ The modules combine direct summation, Euler–Maclaurin summation, and the quadr
 
 For fixed $\chi$ and $p$, evaluating the quadrature approximation in a fixed vertical strip requires $O(t^{1/2})$ numerical operations as $t\to+\infty$, excluding coefficient precomputation.
 
-For $|\operatorname{Re}(s)|<20$, the module headers report the following approximate accuracy levels, measured by the scaled error
-
-$$
-\frac{|F_{\mathrm{computed}}-F_{\mathrm{exact}}|}
-{\max(1,|F_{\mathrm{exact}}|)},
-\qquad F=L(s,\chi)\ \text{or}\ L'(s,\chi).
-\tag{2}
-$$
-
-| Range | Approximate scaled error |
-|---|---|
-| $\lvert\operatorname{Im}(s)\rvert<100$ | $10^{-31}$ |
-| $\lvert\operatorname{Im}(s)\rvert<1\,000$ | $10^{-30}$ |
-| $\lvert\operatorname{Im}(s)\rvert<10\,000$ | $10^{-29}$ |
-
-These are empirical accuracy levels. The paper reports comparisons with calculations performed at higher precision using MPFUN2020 and Euler–Maclaurin summation; it does not establish rigorous bounds for the quadrature error.
-
-The public functions stop with an error if the following limits on $|\operatorname{Im}(s)|$ are exceeded:
-
-| Modulus $q$ | Maximum accepted $\lvert\operatorname{Im}(s)\rvert$ |
-|---|---|
-| 3 | $9.0\times10^{18}$ |
-| 4 | $7.0\times10^{18}$ |
-| 5 | $5.7\times10^{18}$ |
-| 7 | $4.0\times10^{18}$ |
-| 8 | $3.5\times10^{18}$ |
-| 9 | $3.2\times10^{18}$ |
-
-The accuracy table above describes the stated testing ranges; these larger input limits are implementation safeguards.
 
 ## References
 
