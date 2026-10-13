@@ -3,7 +3,7 @@ Fortran code for computing some Dirichlet L-functions (and their derivatives) in
 
 # Dirichlet-L-functions
 
-Supplementary materials and Fortran code for the paper **“Simple and accurate approximations to Dirichlet L-functions”** by A. Kuznetsov (2026); see [Reference 1](#references).
+Supplementary materials and Fortran code for the paper **“Simple and accurate approximations to Dirichlet L-functions”** by A. Kuznetsov (2026), available as [arXiv:2610.10595](https://arxiv.org/abs/2610.10595); see [Reference 1](#references).
 
 This repository provides:
 
@@ -12,7 +12,7 @@ This repository provides:
 
 ## Supported characters
 
-The code and coefficient tables cover all 16 primitive Dirichlet characters with modulus $3\leq q\leq10$. Character names $\chi_{q,a}$ use the Conrey labels employed by the [LMFDB](https://www.lmfdb.org/).
+The code and coefficient tables cover all 26 primitive Dirichlet characters with modulus $3\leq q\leq12$. Character names $\chi_{q,a}$ use the Conrey labels employed by the [LMFDB](https://www.lmfdb.org/).
 
 | Modulus $q$ | Character labels $a$ |
 |---|---|
@@ -22,6 +22,8 @@ The code and coefficient tables cover all 16 primitive Dirichlet characters with
 | 7 | 2, 3, 4, 5, 6 |
 | 8 | 3, 5 |
 | 9 | 2, 4, 5, 7 |
+| 11 | 2, 3, 4, 5, 6, 7, 8, 9, 10 |
+| 12 | 11 |
 
 For example, $\chi_{3,2}$ has values $(1,-1,0)$ on the residue classes $1,2,3$, and $\chi_{4,3}$ has values $(1,0,-1,0)$ on $1,2,3,4$. The latter gives the Dirichlet beta function.
 
@@ -131,6 +133,12 @@ The directory [Fortran-modules](Fortran-modules) contains the following source f
 | [L_chi_8_5_module.f90](Fortran-modules/L_chi_8_5_module.f90) | `L_8_5` |
 | [L_chi_9_2_and_chi_9_5_module.f90](Fortran-modules/L_chi_9_2_and_chi_9_5_module.f90) | `L_9_2`, `L_9_5` |
 | [L_chi_9_4_and_chi_9_7_module.f90](Fortran-modules/L_chi_9_4_and_chi_9_7_module.f90) | `L_9_4`, `L_9_7` |
+| [L_chi_11_2_and_chi_11_6_module.f90](Fortran-modules/L_chi_11_2_and_chi_11_6_module.f90) | `L_11_2`, `L_11_6` |
+| [L_chi_11_3_and_chi_11_4_module.f90](Fortran-modules/L_chi_11_3_and_chi_11_4_module.f90) | `L_11_3`, `L_11_4` |
+| [L_chi_11_5_and_chi_11_9_module.f90](Fortran-modules/L_chi_11_5_and_chi_11_9_module.f90) | `L_11_5`, `L_11_9` |
+| [L_chi_11_7_and_chi_11_8_module.f90](Fortran-modules/L_chi_11_7_and_chi_11_8_module.f90) | `L_11_7`, `L_11_8` |
+| [L_chi_11_10_module.f90](Fortran-modules/L_chi_11_10_module.f90) | `L_11_10` |
+| [L_chi_12_11_module.f90](Fortran-modules/L_chi_12_11_module.f90) | `L_12_11` |
 
 Each function has a corresponding function with `_prime` appended to its name. For example:
 
@@ -189,7 +197,7 @@ For fixed $\chi$ and $p$, evaluating the quadrature approximation in a fixed ver
 
 ## References
 
-1. A. Kuznetsov. *Simple and accurate approximations to Dirichlet L-functions*. Manuscript, October 6, 2026.
+1. A. Kuznetsov. *Simple and accurate approximations to Dirichlet L-functions*. [arXiv:2610.10595](https://arxiv.org/abs/2610.10595), 2026.
 2. D. H. Bailey. *MPFUN2020: A thread-safe arbitrary precision package with special functions*. [Software](https://www.davidhbailey.com/dhbsoftware/) and [documentation](https://www.davidhbailey.com/dhbpapers/mpfun2020.pdf).
 
 ## Author and license
